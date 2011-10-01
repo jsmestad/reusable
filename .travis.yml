@@ -1,0 +1,10 @@
+before_script:
+  - "psql -c 'create database reusable_test;' -U postgres >/dev/null"
+  - "mysql -e 'create database reusable_test;' >/dev/null"
+rvm:
+  - 1.9.2
+  - 1.9.3
+env:
+  - DB=sqlite
+  - DB=mysql
+  - DB=postgres
