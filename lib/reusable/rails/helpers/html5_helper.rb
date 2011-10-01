@@ -1,6 +1,6 @@
 # Adds support for various HTML5 Boilerplate methods.
 # This is assuming you are using the partials found under
-# the ./helpers/html5_helper/ sub-folder in this project.
+# the ./html5_helper/ sub-folder in this project.
 #
 module Reusable::Rails
   module Helpers
