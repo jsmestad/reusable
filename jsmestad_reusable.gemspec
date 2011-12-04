@@ -10,8 +10,8 @@ Gem::Specification.new do |s|
   s.authors     = ["Justin Smestad"]
   s.email       = ["justin.smestad@gmail.com"]
   s.homepage    = "https://github.com/jsmestad/reusable"
-  s.summary     = "TODO: Summary of Reusable."
-  s.description = "TODO: Description of Reusable."
+  s.summary     = "Reusable mixins for Rails, RSpec, and Cucumber."
+  s.description = "Reusable mixins for Rails, RSpec, and Cucumber."
 
   s.files = Dir["lib/**/*"] + ["Rakefile", "README.md"]
   s.test_files = Dir["{features,spec}/**/*"]
