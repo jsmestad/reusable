@@ -5,7 +5,7 @@ require "reusable/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
-  s.name        = "jsmestad_reusable"
+  s.name        = "reusable"
   s.version     = Reusable::VERSION
   s.authors     = ["Justin Smestad"]
   s.email       = ["justin.smestad@gmail.com"]
