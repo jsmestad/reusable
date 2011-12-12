@@ -2,8 +2,8 @@
 ENV["RAILS_ENV"] = "test"
 
 require File.expand_path('../dummy/config/environment.rb',  __FILE__)
-require 'rails/test_help'
 require 'rspec/rails'
+require 'rspec/autorun'
 
 # Should matchers
 require 'shoulda/matchers'
@@ -17,7 +17,6 @@ Dir["#{File.dirname(__FILE__)}/support/**/*.rb"].each { |f| require f }
 ActiveRecord::Migrator.migrate File.expand_path('../dummy/db/migrate/', __FILE__)
 
 RSpec.configure do |config|
-  require 'rspec/expectations'
   config.include RSpec::Matchers
 
   config.use_transactional_fixtures = true

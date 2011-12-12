@@ -1,7 +1,7 @@
 module Reusable
   module Rails
     module Controllers
-      autoload :AuthenticationHelpers, 'reusable/rails/controllers/authentication_helpers.rb'
+      autoload :AuthenticationFilters, 'reusable/rails/controllers/authentication_filters.rb'
       autoload :FlashMessages, 'reusable/rails/controllers/flash_messages.rb'
       autoload :MissingRecordHandler, 'reusable/rails/controllers/missing_record_handler.rb'
       autoload :PresentationMethods, 'reusable/rails/controllers/presentation_methods.rb'
@@ -11,6 +11,10 @@ module Reusable
 
     module Models
       autoload :Paranoid, 'reusable/rails/models/paranoid.rb'
+    end
+
+    module Helpers
+      autoload :Html5Helper, 'reusable/rails/helpers/html5_helper.rb'
     end
   end
 end

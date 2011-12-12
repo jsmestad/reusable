@@ -1,0 +1,10 @@
+# This file is used by Travis-CI only
+# spec/support/databases.yml
+development:
+  adapter: sqlite3
+  database: ":memory:"
+  timeout: 500
+test:
+  adapter: sqlite3
+  database: ":memory:"
+  timeout: 500

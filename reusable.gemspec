@@ -19,8 +19,9 @@ Gem::Specification.new do |s|
   s.add_dependency "bcrypt-ruby"
   s.add_dependency "rails", "~> 3.1.3"
 
-  s.add_development_dependency "cucumber"
-  s.add_development_dependency "rspec"
+  s.add_development_dependency "cucumber-rails"
+  s.add_development_dependency "rspec-rails"
+  s.add_development_dependency "shoulda-matchers"
   s.add_development_dependency "fabrication"
   s.add_development_dependency "ffaker"
 end
