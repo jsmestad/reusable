@@ -5,10 +5,9 @@
 # you also need to add the following to your config/routes.rb file:
 #   get '/:page_name',
 #     to: 'pages#show',
-#     as: :pages,
 #     constraints: { page_name: /landing/i }
 #
-#   root :to => 'pages#show', defaults: { page_name: 'landing' }
+#   root to: 'pages#show', defaults: { page_name: 'landing' }
 #
 module Reusable::Rails
   module Controllers
