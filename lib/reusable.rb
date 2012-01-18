@@ -6,6 +6,7 @@ end
 
 module Reusable
   autoload :Cucumber, 'reusable/cucumber'
+  autoload :Mongoid, 'reusable/mongoid'
   autoload :Rails, 'reusable/rails'
   autoload :RSpec, 'reusable/rspec'
 end
