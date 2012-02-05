@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
   s.test_files = Dir["{features,spec}/**/*"]
 
   s.add_dependency "bcrypt-ruby"
-  s.add_dependency "rails", "~> 3.1.3"
+  s.add_dependency "rails", ">= 3.1", "<= 3.2"
 
   s.add_development_dependency "mongoid"
   s.add_development_dependency "cucumber-rails"
