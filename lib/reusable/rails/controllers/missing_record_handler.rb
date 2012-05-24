@@ -2,6 +2,8 @@
 # cleanly raising, and rescuing from, ActiveRecord::RecordNotFound
 # errors.
 #
+# Ensure active_record/errors are loaded
+#
 module Reusable::Rails
   module Controllers
     module MissingRecordHandler
