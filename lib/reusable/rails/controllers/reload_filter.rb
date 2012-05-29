@@ -13,25 +13,23 @@ module Reusable::Rails
         before_filter :_reload_libs, :if => :_reload_libs?
       end
 
-      module InstanceMethods
-        # Iterate over every directory specified in RELOAD_LIBS and
-        # re-require the file.
-        def _reload_libs
-          RELOAD_LIBS.each do |lib|
-            require_dependency lib
-          end
+      # Iterate over every directory specified in RELOAD_LIBS and
+      # re-require the file.
+      def _reload_libs
+        RELOAD_LIBS.each do |lib|
+          require_dependency lib
         end
+      end
 
-        # Conditional check to ensure that we should reload libraries.
-        # If RELOAD_LIBS is not defined, we skip this. It is a good
-        # idea to also ensure we are in development mode when defining
-        # it.
-        #
-        # @returns [Boolean]
-        # (see #_reload_libs)
-        def _reload_libs?
-          defined? RELOAD_LIBS
-        end
+      # Conditional check to ensure that we should reload libraries.
+      # If RELOAD_LIBS is not defined, we skip this. It is a good
+      # idea to also ensure we are in development mode when defining
+      # it.
+      #
+      # @returns [Boolean]
+      # (see #_reload_libs)
+      def _reload_libs?
+        defined? RELOAD_LIBS
       end
     end
   end

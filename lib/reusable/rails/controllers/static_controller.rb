@@ -21,20 +21,18 @@ module Reusable::Rails
         # rescue_from ActionView::MissingTemplate, :with => :invalid_page
       end
 
-      module InstanceMethods
-        def show
-          render :template => current_page
-        end
+      def show
+        render :template => current_page
+      end
 
-      protected
+    protected
 
-        def invalid_page
-          render :nothing => true, :status => 404
-        end
+      def invalid_page
+        render :nothing => true, :status => 404
+      end
 
-        def current_page
-          "pages/#{params[:page_name].to_s.downcase}"
-        end
+      def current_page
+        "pages/#{params[:page_name].to_s.downcase}"
       end
     end
   end
