@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    reusable (0.0.4)
+    reusable (0.0.5)
       activesupport
       bcrypt-ruby
 
